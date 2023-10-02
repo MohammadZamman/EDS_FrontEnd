@@ -8,8 +8,8 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class DataService {
-  
-  private apiUrl = environment.baseApiUrl;
+ private baseApiUrl='https://localhost:7281';
+  private apiUrl = this.baseApiUrl;
   private apifortesting = 'https://lr7rg.wiremockapi.cloud';
 
   constructor(private http: HttpClient) { 
