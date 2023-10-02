@@ -6,8 +6,9 @@ import { environment } from 'src/environments/environment';
 @Injectable({
   providedIn: 'root'
 })
-export class ClientService {
-  private apiUrl = environment.baseApiUrl;
+export class ClientService { 
+  private baseApiUrl='https://localhost:7281';
+  private apiUrl = this.baseApiUrl;
 
   private apiOrg = 'https://lr7rg.wiremockapi.cloud';
 
